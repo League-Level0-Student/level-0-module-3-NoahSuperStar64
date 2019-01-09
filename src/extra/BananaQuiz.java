@@ -10,7 +10,7 @@ public class BananaQuiz
 	public static void main(String[] args)
 	{
 		//1. ask the user if they like bananas
-		String answer = JOptionPane.showInputDialog()
+		String answer = JOptionPane.showInputDialog("");
 		//2. if they say no, 
 			//tell them they are crazy 
 			//and end quiz
