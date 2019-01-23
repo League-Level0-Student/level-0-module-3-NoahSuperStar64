@@ -1,11 +1,21 @@
 import javax.swing.JOptionPane;
-
+import java.awt.Color;
 import org.jointheleague.graphical.robot.Robot;
 
 public class ObediantRobot {
 	static Robot MAP = new Robot();
 public static void main(String[] args) {
 	
+	String color = JOptionPane.showInputDialog("What color do you want? (Red, green, blue)");
+	if (color.equalsIgnoreCase("Red")) {
+		MAP.setPenColor(Color.RED);
+	}
+	else if(color.equalsIgnoreCase("Green")) {
+		MAP.setPenColor(Color.GREEN);
+	}
+	else if(color.equalsIgnoreCase("Blue")) {
+		MAP.setPenColor(Color.BLUE);
+	}
 String Answer = JOptionPane.showInputDialog("What shape do you want?");
 	if(Answer.equalsIgnoreCase("Circle")) {
 		drawCircle();
